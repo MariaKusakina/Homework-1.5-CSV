@@ -69,6 +69,7 @@ public class Main {
         try {
             FileWriter fileWriter = new FileWriter(fileJson);
             fileWriter.write(json);
+            fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
